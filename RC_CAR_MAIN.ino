@@ -7,7 +7,7 @@
 #define TURNRIGHT 2
 #define GOFORWARD_WALL 3
 
-#define STOPDISTANCE 70 // Distance in CM to stop the RC car. 30 CM = ~ 1 foot
+#define STOPDISTANCE 100 // Distance in CM to stop the RC car. 30 CM = ~ 1 foot
 
 // Arduino pins
 #define echoPin A0
@@ -49,7 +49,7 @@ void setup()
 	// End Debugging
 	
 	frontwheels.setSpeed(255); // Set front motor speed to max
-	rearwheels.setSpeed(255); // Set rear motor speed to max
+	rearwheels.setSpeed(200); // Set rear motor speed to max
 
 	sensor_state = 0; // Set state to GOFORWARD
 	sensor_input = NULL; // No value until the sensor is read
